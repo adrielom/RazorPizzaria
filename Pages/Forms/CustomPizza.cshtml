@@ -1,0 +1,19 @@
+@page
+@model RazorPizzaria.Pages.Forms.CustomPizza
+@{
+    ViewData["Title"] = "CustomPizza";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center container">
+    <h1>Create your own pizza</h1>
+    <form method="post" class="mt-5 mx-auto d-flex flex-column">
+        <input type="text" asp-for="Pizza.PizzaName" placeholder="give your pizza a name"/>
+        <input type="checkbox" asp-for="Pizza.HasTomatoSauce">Tomato Sauce</input>
+        <input type="checkbox" asp-for="Pizza.HasHam">Ham</input>
+        <input type="checkbox" asp-for="Pizza.HasMushrooms">Mushrooms</input>
+
+        <button class="btn btn-primary mt-1" type="submit">Order My Pizza</button>
+    </form>
+</div>

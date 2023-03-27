@@ -1,0 +1,29 @@
+# Ignore Visual Studio files
+.vs/
+
+# Ignore build output files
+/bin/
+/obj/
+
+# Ignore NuGet packages
+*.nupkg
+/packages/
+
+# Ignore user-specific files and settings
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore miscellaneous files
+Thumbs.db
+desktop.ini
+
+# Ignore .NET Core artifacts
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.userprefs
+*.vscode
+*.vs
